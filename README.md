@@ -29,4 +29,4 @@ Split a CSV file into pieces. A stripped-down version of the `split` standard co
 
 ## Example
 
-cat source.csv | splitcsv --copy-header -l 10000 -a 4 --additional-suffix=.csv - /tmp/x
+`cat source.csv | splitcsv --copy-header -l 10000 -a 4 --additional-suffix=.csv - /tmp/x`

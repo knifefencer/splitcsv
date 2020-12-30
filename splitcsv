@@ -8,7 +8,7 @@ const DESCRIPTION = 'split a CSV file into pieces';
 const TITLE = NAME . ' ' . VERSION . ' - ' . DESCRIPTION;
 
 const HELP_MESSAGE = <<<EOH
-    cat FILE | ./splitcsv.php [OPTION]... [- [PREFIX]]    
+    cat FILE | ./splitcsv [OPTION]... [- [PREFIX]]
     
     Output pieces of FILE to PREFIX00, PREFIX01, ...; default size is 1000 lines, and default PREFIX is 'x'.
     

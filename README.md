@@ -2,7 +2,7 @@
 
 Split a CSV file into pieces.
 
-    cat FILE | ./splitcsvgit  [OPTION]... [- [PREFIX]]    
+    cat FILE | ./splitcsv  [OPTION]... [- [PREFIX]]    
     
     Output pieces of FILE to PREFIX00, PREFIX01, ...; default size is 1000 lines, and default PREFIX is 'x'.
     

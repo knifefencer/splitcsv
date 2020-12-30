@@ -1,8 +1,8 @@
 # splitcsv
 
-Split a CSV file into pieces.
+Split a CSV file into pieces. A stripped-down version of the `split` standard command.
 
-    cat FILE | ./splitcsv  [OPTION]... [- [PREFIX]]    
+    cat FILE | splitcsv  [OPTION]... [- [PREFIX]]    
     
     Output pieces of FILE to PREFIX00, PREFIX01, ...; default size is 1000 lines, and default PREFIX is 'x'.
     
@@ -26,3 +26,7 @@ Split a CSV file into pieces.
            
        --version
            output version information and exit
+
+## Example
+
+cat source.csv | splitcsv --copy-header -l 10000 -a 4 --additional-suffix=.csv - /tmp/x
